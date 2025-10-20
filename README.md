@@ -1,12 +1,51 @@
-# React + Vite
+# 📝 Mini Task Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app built to practice **core React fundamentals** — including **Virtual DOM**, **State**, **Props**, **JSX**, **Components**, **Event Handlers**, and **Fragments**.  
+Styled using **Tailwind CSS** for a clean, responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ➕ Add new tasks
+- ✅ Toggle task completion
+- ❌ Delete tasks
+- ⚡ Fast, minimal, and modern design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Tech Stack
+
+- **React (Vite)**
+- **Tailwind CSS**
+
+---
+
+## 🧠 Concepts Practiced
+
+- State management with `useState`
+- Passing props between components
+- Handling user input and events
+- Using fragments for cleaner DOM
+- Understanding React’s Virtual DOM behavior
+
+---
+
+## ⚙️ Quick Start
+
+```bash
+git clone https://github.com/yourusername/mini-task-tracker.git
+cd mini-task-tracker
+npm install
+npm run dev
+
+
+## 📁 Structure
+src/
+ ├── components/
+ │    ├── AddTask.jsx
+ │    ├── TaskList.jsx
+ │    └── TaskItem.jsx
+ ├── App.jsx
+ └── index.css
+```

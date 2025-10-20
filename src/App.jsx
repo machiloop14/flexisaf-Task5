@@ -34,6 +34,14 @@ function App() {
           </h1>
           <AddTask onAdd={addTask} />
           <TaskList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
+          <div className="flex items-center justify-center mt-2">
+            <a
+              href="https://github.com/machiloop14"
+              className="text-center text-blue-300"
+            >
+              view on github
+            </a>
+          </div>
         </div>
       </div>
     </>
