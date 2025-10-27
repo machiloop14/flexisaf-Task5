@@ -1,5 +1,43 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
+// 🎨 Styled Components
+const Form = styled.form`
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+`;
+
+const Input = styled.input`
+  flex: 1;
+  border: 1px solid #d1d5db; /* Tailwind: border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+
+  &:focus {
+    box-shadow: 0 0 0 2px #60a5fa; /* focus:ring-2 focus:ring-blue-400 */
+  }
+`;
+
+const Button = styled.button`
+  background-color: #3b82f6; /* Tailwind: bg-blue-500 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #2563eb; /* Tailwind: hover:bg-blue-600 */
+  }
+`;
+
+// 💡 Component Logic
 function AddTask({ onAdd }) {
   const [title, setTitle] = useState("");
 
@@ -11,21 +49,15 @@ function AddTask({ onAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2 mb-4">
-      <input
+    <Form onSubmit={handleSubmit}>
+      <Input
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="Enter a new task..."
-        className="flex-1 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
       />
-      <button
-        type="submit"
-        className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
-      >
-        Add
-      </button>
-    </form>
+      <Button type="submit">Add</Button>
+    </Form>
   );
 }
 
