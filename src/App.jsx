@@ -36,7 +36,7 @@ function App() {
           <TaskList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
           <div className="flex items-center justify-center mt-2">
             <a
-              href="https://github.com/machiloop14"
+              href="https://github.com/machiloop14/flexisaf-Task6"
               className="text-center text-blue-300"
             >
               view on github
